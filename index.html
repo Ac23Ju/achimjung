@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nostr Profil</title>
-    <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
+    <title>Punkteverteilung Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="animation.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="nostr-profile">
-        Lade Profil...
-    </div>
-
-    <div class="menu-wrap">
-        <label for="menu-toggle" class="visually-hidden"></label>
-        <input type="checkbox" id="menu-toggle" class="toggler" aria-label="Menü öffnen/schließen">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div class="links">
-                <a href="https://www.linkedin.com/in/achimjung" target="_blank" rel="noopener">LinkedIn</a>
-                <a href="#" id="nostr-link">Nostr</a>
-            </div>
+    <div class="container">
+        <div id="animation-canvas" class="responsive-canvas"></div>
+        <div class="social-links">
+         <a href="https://www.linkedin.com/in/achimjung" target="_blank" rel="me">
+                <img src="linkedin-icon.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <!--<a href="https://mastodon.social/@ac23ju" target="_blank" rel="me">
+                <img src="mastodon-icon.svg" alt="Mastodon" class="social-icon">
+            </a> -->
+            <a href="https://bsky.app/profile/achimjung.eu" target="_blank" rel="me">
+                <img src="bsky-icon.svg" alt="BlueSky" class="social-icon">
+            </a>
+            <a href="https://primal.net/p/npub1w7j72eq6jtdv8nkzjz4hn2g5n08emm4gv4qgx4z23rmv9mmzpzls2aw9lz" target="_blank" rel="me">
+                <img src="nostr-icon.svg" alt="Nostr" class="social-icon">
+            </a>
+            <!--<a href="https://pixelfed.social/ac23ju" target="_blank" rel="me">
+                <img src="pixelfed-icon.svg" alt="Pixelfed" class="social-icon">
+            </a>--> 
         </div>
     </div>
-
-    <script src="profil.js" type="module"></script>
 </body>
 </html>
